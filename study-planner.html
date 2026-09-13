@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Planner | Pakistani Student Helper PK</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🇵🇰 Student Helper PK
+            </div>
+
+        <div class="nav-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="matric.html">Matric</a>
+
+    <a href="intermediate.html">Intermediate</a>
+
+    <a href="university.html">University</a>
+
+    <a href="calculators.html">Calculators</a>
+
+    <a href="entry-tests.html">Entry Tests</a>
+
+    <a href="scholarships.html">Scholarships</a>
+
+</div>
+
+        </nav>
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="tag">📅 PLAN YOUR STUDY</p>
+
+            <h1>
+                Study <span>Planner</span>
+            </h1>
+
+            <p>
+                Apna daily study schedule aur tasks
+                easily organize karein.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-title">
+            <p>DAILY PLAN</p>
+            <h2>Add a Study Task</h2>
+        </div>
+
+
+        <div class="calculator-box">
+
+            <label>Subject</label>
+
+            <input
+                type="text"
+                id="plannerSubject"
+                placeholder="Example: Mathematics"
+            >
+
+
+            <label>Study Time</label>
+
+            <input
+                type="time"
+                id="plannerTime"
+            >
+
+
+            <label>Task</label>
+
+            <input
+                type="text"
+                id="plannerTask"
+                placeholder="Example: Chapter 4 Exercise"
+            >
+
+
+            <button
+                class="main-btn"
+                onclick="addStudyTask()"
+            >
+                Add to Planner
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-title">
+            <p>YOUR PLAN</p>
+            <h2>Today's Tasks</h2>
+        </div>
+
+        <div
+            id="plannerList"
+            class="cards"
+        ></div>
+
+    </section>
+
+
+    <section class="section" style="text-align:center;">
+
+        <button
+            class="main-btn"
+            onclick="clearPlanner()"
+        >
+            Clear Planner
+        </button>
+
+        <a href="matric.html" class="main-btn">
+            ← Back to Matric
+        </a>
+
+    </section>
+
+
+   <footer>
+    <h3>🇵🇰 Pakistani Student Helper PK</h3>
+
+    <p>
+        Free study tools, guides and resources for Pakistani students.
+    </p>
+
+    <p>
+        © 2026 Pakistani Student Helper PK
+    </p>
+</footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/study-planner.js"></script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Tools | Pakistani Student Helper PK</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🇵🇰 Student Helper PK
+            </div>
+
+           <div class="nav-links">
+
+    <a href="index.html">Home</a>
+
+    <a href="matric.html">Matric</a>
+
+    <a href="intermediate.html">Intermediate</a>
+
+    <a href="university.html">University</a>
+
+    <a href="calculators.html">Calculators</a>
+
+    <a href="entry-tests.html">Entry Tests</a>
+
+    <a href="scholarships.html">Scholarships</a>
+
+</div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="tag">
+                📝 STUDENT PRODUCTIVITY
+            </p>
+
+            <h1>
+                Study <span>Tools</span>
+            </h1>
+
+            <p>
+                Simple free tools to help students
+                study, focus and organize their work.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDY TIMER -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p>
+                TOOL 01
+            </p>
+
+            <h2>
+                ⏱️ Study Timer
+            </h2>
+
+        </div>
+
+
+        <div class="calculator-box timer-box">
+
+            <div id="timerDisplay">
+                25:00
+            </div>
+
+
+            <div class="timer-buttons">
+
+                <button
+                    class="main-btn"
+                    onclick="startTimer()">
+
+                    Start
+
+                </button>
+
+
+                <button
+                    class="main-btn"
+                    onclick="pauseTimer()">
+
+                    Pause
+
+                </button>
+
+
+                <button
+                    class="main-btn"
+                    onclick="resetTimer()">
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WORD COUNTER -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p>
+                TOOL 02
+            </p>
+
+            <h2>
+                📝 Word Counter
+            </h2>
+
+        </div>
+
+
+        <div class="calculator-box">
+
+            <label>
+                Write or paste your text
+            </label>
+
+
+            <textarea
+                id="wordText"
+                placeholder="Start writing here..."
+                oninput="countWords()">
+            </textarea>
+
+
+            <div class="counter-results">
+
+                <div class="counter-card">
+
+                    <strong id="wordCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Words
+                    </span>
+
+                </div>
+
+
+                <div class="counter-card">
+
+                    <strong id="characterCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Characters
+                    </span>
+
+                </div>
+
+
+                <div class="counter-card">
+
+                    <strong id="characterNoSpaceCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Characters (No Spaces)
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="main-btn"
+                onclick="clearWordCounter()">
+
+                Clear Text
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- QUICK NOTES -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p>
+                TOOL 03
+            </p>
+
+            <h2>
+                📋 Quick Notes
+            </h2>
+
+        </div>
+
+
+        <div class="calculator-box">
+
+            <label>
+                Write your study notes
+            </label>
+
+
+            <textarea
+                id="studyNotes"
+                placeholder="Write your notes here...">
+            </textarea>
+
+
+            <div class="timer-buttons">
+
+                <button
+                    class="main-btn"
+                    onclick="saveNotes()">
+
+                    Save Notes
+
+                </button>
+
+
+                <button
+                    class="main-btn"
+                    onclick="clearNotes()">
+
+                    Clear Notes
+
+                </button>
+
+            </div>
+
+
+            <div id="notesMessage" class="result"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDY TIPS -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <p>
+                QUICK TIPS
+            </p>
+
+            <h2>
+                Study Better
+            </h2>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Set One Goal
+                </h3>
+
+                <p>
+                    Har study session mein ek clear
+                    goal set karein.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    📵
+                </div>
+
+                <h3>
+                    Reduce Distractions
+                </h3>
+
+                <p>
+                    Study ke waqt unnecessary
+                    notifications aur distractions kam karein.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    🔄
+                </div>
+
+                <h3>
+                    Take Breaks
+                </h3>
+
+                <p>
+                    Long study sessions ke darmiyan
+                    short breaks lena useful hota hai.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    📚
+                </div>
+
+                <h3>
+                    Review Regularly
+                </h3>
+
+                <p>
+                    Purane topics ko regularly revise
+                    karte rahen.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- QUICK LINKS -->
+
+    <section class="section tools-section">
+
+        <div class="section-title">
+
+            <p>
+                QUICK ACCESS
+            </p>
+
+            <h2>
+                More Student Tools
+            </h2>
+
+        </div>
+
+
+        <div class="tool-buttons">
+
+            <a
+                href="calculators.html"
+                class="tool-btn">
+
+                🧮 Calculators
+
+            </a>
+
+
+            <a
+                href="matric.html"
+                class="tool-btn">
+
+                🎓 Matric
+
+            </a>
+
+
+            <a
+                href="university.html"
+                class="tool-btn">
+
+                🏫 University
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BACK HOME -->
+
+    <section
+        class="section"
+        style="text-align:center;">
+
+        <a
+            href="index.html"
+            class="main-btn">
+
+            ← Back to Home
+
+        </a>
+
+    </section>
+
+
+
+  <footer>
+    <h3>🇵🇰 Pakistani Student Helper PK</h3>
+
+    <p>
+        Free study tools, guides and resources for Pakistani students.
+    </p>
+
+    <p>
+        © 2026 Pakistani Student Helper PK
+    </p>
+</footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/study-tools.js"></script>
+
+</body>
+
+</html>
